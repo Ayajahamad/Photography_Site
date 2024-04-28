@@ -1,7 +1,7 @@
 *{
   margin: 0%;
   padding: 0%;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Roboto;
 }
 
 :root {
@@ -38,7 +38,18 @@
   background-repeat: no-repeat;
   height: 100vh;
 }
-
+.homeText {
+  animation: colorChange 5s infinite; /* 5s duration, infinite loop */
+  font-weight: bold;
+  text-shadow: 0 2px 2px #dfdfdf, 
+      -2px 5px 1px #b8b8b8, 
+      -4px 8px 0px #979797, 
+      -6px 11px 0px #747474,
+      -8px 14px 0px #565656,
+      -10px 17px 0px #343434,
+      -12px 20px 0px #171717,
+      -14px 23px 0px #000;
+}
 #btn1,
 #btn2 {
   margin-top: 200px;
@@ -69,6 +80,7 @@
 .item img{
   width: 100%;
   height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .item1{
   grid-row-start: 1;
@@ -109,6 +121,19 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+}
+.visionText{
+  animation: colorChange 5s infinite;
+  text-shadow: 0 2px 2px #dfdfdf, 
+      -2px 5px 1px #cbcbcb,
+      -4px 8px 1px #979797, 
+      -6px 11px 1px #a2a2a2, 
+      -8px 14px 1px #aeaeae, 
+      -10px 17px 1px #b5b5b5, 
+      -12px 20px 1px #bebebe, 
+      -14px 23px 1px #cecece, 
+      -16px 26px 1px #dbdbdb, 
+      -18px 29px 1px #dfdfdf;
 }
 .visCen, .visCen1 {
   display: flex;
@@ -162,6 +187,7 @@
 .fImage img{
   width: 100%;
   opacity: 0.6;
+  box-shadow: rgba(224, 224, 224, 0.4) 5px 5px, rgba(180, 180, 180, 0.3) 10px 10px, rgba(255, 235, 248, 0.2) 15px 15px, rgba(72, 72, 72, 0.1) 20px 20px, rgba(162, 162, 162, 0.05) 25px 25px;
 }
 .footer{
   background-image: url(../images/Fimg.jpg);
@@ -187,6 +213,9 @@
 .fContent h2{
   font-size: 100px;
   opacity: 0.6;
+  text-shadow: 4px 4px 0px #000, 
+      -4px 0 0px #000,
+      7px 4px 0 #fff;
 }
 .bi {
   font-size: var(--font-size-arrow);
@@ -204,4 +233,14 @@
   background-color: white;
   color: black;
   transition: 1s ease-in-out;
+  cursor: pointer;
+}
+
+/* Animation */
+@keyframes colorChange {
+  0% { color: rgb(255, 255, 255); }
+  25% { color: rgb(215, 215, 215);}
+  50% { color: rgb(255, 255, 255);}
+  75% { color: rgb(0, 0, 0);}
+  100% { color: rgb(15, 14, 14);}
 }
