@@ -1,3 +1,9 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  font-family: "Courier New", Courier, monospace;
+}
+
 :root {
   --font-size-navbar-item: 18px;
   --font-size-navbar-brand: 10px;
@@ -124,7 +130,7 @@
   width: 100%;
 }
 .slider{
-  /* height: 100vh; */
+  margin-top: 10px;
 }
 #slidenum{
   font-size: 12px;
@@ -162,7 +168,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .fImg1 img{
   border-top-right-radius: 100px;
@@ -189,6 +195,7 @@
   border: 2px solid white;
   padding: 10px;
   border-radius: 50%;
+  text-align: center;
 }
 .fIcon{
   line-height: 3;
@@ -196,4 +203,5 @@
 .bi:hover {
   background-color: white;
   color: black;
+  transition: 1s ease-in-out;
 }
