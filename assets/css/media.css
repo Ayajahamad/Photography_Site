@@ -1,0 +1,39 @@
+@media(max-width:760px){
+    .item1,.item2,.item3,.item4,.item5,.item6{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row: auto;
+    }
+    #image1,#image3{
+      display: none;
+    }
+    .testimonials{
+        text-align: center;
+    }
+    .video{
+      margin-top: 20px;
+    }
+    .decContent{
+      text-align: center;
+    }
+    .decContent>p , .decContent>button{
+      margin-top: 40px;
+    }
+    .fContent{
+      position: relative !important;
+    }
+    .fImage img{
+      width: 100%;
+      height: 100px;
+      opacity: 0.6;
+    }
+    .fContent h2{
+      font-size: 20px !important;
+    }
+    .fIcon{
+      line-height: 1 !important;
+    }
+    .bi {
+      margin: auto !important;
+    }
+  }
